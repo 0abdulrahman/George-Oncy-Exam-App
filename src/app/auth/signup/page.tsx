@@ -1,17 +1,17 @@
-import React from 'react'
-import LandingAuth from '@/components/LandingAuth'
-import NavAuth from '@/components/NavAuth'
-import SocialButton from '@/components/SocialButton'
-import SignUpForm from './_components/SignUp-Form'
+import React from "react";
+import LandingAuth from "@/components/custom/landing-auth";
+import NavAuth from "@/components/features/auth/nav-auth";
+import SocialButton from "@/components/features/auth/social-button";
+import SignUpForm from "./_components/SignUp-Form";
 
 export default function signUpPage() {
-  console.log("this is Api" , process.env.NEXTAUTH_SECRET);
   return (
-    <main className='grid  lg:grid-cols-2 h-screen grid-cols-1 '>
+    <main className="grid  lg:grid-cols-2 h-screen grid-cols-1 ">
       {/* loanding */}
       <LandingAuth />
+
       {/* Sign Up */}
-      <section className='grid grid-cols-1 gap-10  justify-self-center  pb-10 lg:pb-0  '>
+      <section className="grid grid-cols-1 gap-10  justify-self-center  pb-10 lg:pb-0  ">
         {/* nav auth */}
         <NavAuth />
         {/* Form Sign Up */}
@@ -20,15 +20,6 @@ export default function signUpPage() {
           <SocialButton />
         </div>
       </section>
-
     </main>
-  )
+  );
 }
-
-
-
-
-
-
-
-

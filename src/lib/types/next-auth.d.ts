@@ -13,7 +13,6 @@ declare module "next-auth" {
       firstName: string;
       lastName: string;
       email: string;
-      gender: "male" | "female";
       phone?: string;
       role: string;
     } & DatabaseProperties;

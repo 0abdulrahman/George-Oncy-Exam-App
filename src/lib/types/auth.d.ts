@@ -4,18 +4,17 @@
 
 // export type RegisterResponse = Pick<User, "token" | "user">;
 
-declare type  ApplicationUser =  {
-    _id: string,
-    createdAt :string
-    username: string;
-    firstName: string;
-    lastName: string;
-    email: string;
-    phone: string;
-    role: string;
-    isVerified: boolean;
-}
+declare type ApplicationUser = {
+  username: string;
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone: string;
+  role: string;
+  isVerified: boolean;
+} & DatabaseProperties;
+
 export type LoginResponse = {
-    token : string,
-    user : ApplicationUser
-}
+  token: string;
+  user: ApplicationUser;
+};
