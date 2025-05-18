@@ -60,7 +60,7 @@ export default function VerifyCodeForm() {
             render={({ field }) => (
               <FormItem className="my-2">
                 {/* Label */}
-                <FormLabel className="sr-only">Verify OTP Cod</FormLabel>
+                <FormLabel className="sr-only">Verify OTP Code</FormLabel>
 
                 {/* Field */}
                 <FormControl className="relative">
